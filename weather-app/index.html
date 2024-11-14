@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App...</title>
+</head>
+<body class="bg-gray-300">
+    <div class="w-full h-screen flex items-center justify-center">
+        <div class="bg-white text-center shadow-md rounded w-96 h-3/3 px-8 py-5 bg-gradient-to-r from-cyan-500 to-purple-400">
+            <form id="myForm" class="flex items-center max-w-sm mx-auto">   
+              <label for="simple-search" class="sr-only">Search</label>
+              <div class="relative w-full">
+                  <input type="text" id="inp" required class="mt-5 mb-5 bg-opacity-60 bg-gray-200 text-gray-900 text-sm rounded-full w-full focus:border-none ps-5 p-2.5" placeholder="Enter Your City" />
+              </div>
+              <button type="submit" id="btn" class="rounded-full p-3 ms-2 text-sm font-medium text-white bg-opacity-60 bg-gray-200">
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+                  <span class="sr-only">Search</span>
+              </button>
+            </form>
+            <span>
+              <i class="fa-solid fa-cloud text-5xl text-white opacity-60"></i>
+              <i class="fa-solid fa-cloud text-8xl text-white mt-10 opacity-60"></i>
+              <i class="fa-solid fa-cloud text-5xl text-white opacity-60"></i>
+            </span>
+            <h2 class="far text-3xl py-6 text-white font-extrabold">34.54°</h2>
+            <h3 class="city text-4xl text-white">Islamabad</h3>
+            <div class="flow-root mt-20 text-white">
+                <div class="float-left">
+                    <i class="fa-solid fa-water text-4xl"></i>
+                    <span class="humidity text-2xl">50%</span><br>
+                    <span>Humidity</span>
+                </div>
+                <div class="float-right">
+                    <i class="fa-solid fa-wind text-4xl"></i>
+                    <span class="wind text-2xl">15 km/h</span><br>
+                    <span>Wind Speed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body> 
+</html>
